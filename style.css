@@ -11,15 +11,23 @@ li {
 }
 body {
   display: flex;
-  background-color: brown;
+  align-items: center;
   border: 50px;
   flex-direction: column;
   gap: 10px;
 }
 #section1 {
+  h1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 50px;
+  }
+  background-color: brown;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 
   .main-left {
     display: flex;
