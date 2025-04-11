@@ -4,6 +4,7 @@
 }
 li {
   list-style: none;
+  text-align: center;
   align-items: center;
   background-color: beige;
   border-radius: 10px;
@@ -11,33 +12,29 @@ li {
 }
 body {
   display: flex;
+  justify-content: center;
   align-items: center;
   border: 50px;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 #section1 {
-  h1 {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    width: 50px;
-  }
   background-color: brown;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 40px;
 
   .main-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 40px;
 
     .main-right {
       display: flex;
       justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -46,9 +43,9 @@ ul {
   display: flex;
   flex-direction: column;
   width: 260px;
-  gap: 30px;
-  padding: 60px;
-  background-color: rgb(225, 189, 10);
+  gap: 20px;
+  padding: 30px;
+  background-color: #e1bd0a;
   border-radius: 30px;
   margin: 20px;
 }
@@ -57,4 +54,20 @@ img {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
+  border: 10px solid #e1bd0a; /* Couleur et épaisseur */
+  border-radius: 30px; /* Angles arrondis */
+  display: inline-block; /* Assurer que le cadre entoure l'image correctement */
+}
+
+h1 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768) {
+  #section1 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
